@@ -12,12 +12,18 @@ Add tags to tasks by starting them with an `@`, such as `@important` or setting 
 
 This uses utf characters, so it is still valid as a plain text document.
 
+## This fork
+
+This fork adds small features and maybe fixes.
+
+Original can be found here: https://github.com/irrationalistic/vim-tasks
+
 ## Installation
 
 ### Vundle
 Place this in your `.vimrc`:
 
-    Plugin 'irrationalistic/vim-tasks'
+    Plugin 'veirus/vim-tasks'
 
 ... then run the following in Vim:
 
@@ -29,7 +35,7 @@ For Vundle version < 0.10.2, replace Plugin with Bundle above.
 ### NeoBundle
 Place this in your `.vimrc`:
 
-    NeoBundle 'irrationalistic/vim-tasks'
+    NeoBundle 'veirus/vim-tasks'
 
 ... then run the following in Vim:
 
@@ -39,7 +45,7 @@ Place this in your `.vimrc`:
 ### VimPlug
 Place this in your `.vimrc`:
 
-    Plug 'irrationalistic/vim-tasks'
+    Plug 'veirus/vim-tasks'
 
 ... then run the following in Vim:
 
@@ -50,7 +56,7 @@ Place this in your `.vimrc`:
 Run the following in a terminal:
 
     cd ~/.vim/bundle
-    git clone https://github.com/irrationalistic/vim-tasks
+    git clone https://github.com/veirus/vim-tasks
 
 ## Settings Defaults
 
