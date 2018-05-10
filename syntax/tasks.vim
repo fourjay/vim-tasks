@@ -37,7 +37,7 @@ exec 'syn match tAttribute "' . g:TasksAttributeMarker . '\w\+\(([^)]*)\)\=" con
 exec 'syn match tAttributeCompleted "' . g:TasksAttributeMarker . '\w\+\(([^)]*)\)\=" contained'
 
 syn region tTask start=/^\s*/ end=/$/ oneline keepend contains=tMarker,tAttribute
-syn match tTaskNote "^\(\(.*☐.*\)\@!.\)*$"
+exec 'syn match tTaskNote "^\(\(.*' . g:TasksMarkerBase . '.*\)\@!.\)*$"'
 exec 'syn region tTaskDone start="^[\s]*.*'.g:TasksAttributeMarker.'done" end=/$/ oneline contains=tMarkerComplete,tAttributeCompleted'
 exec 'syn region tTaskCancelled start="^[\s]*.*'.g:TasksAttributeMarker.'cancelled" end=/$/ oneline contains=tMarkerCancelled,tAttributeCompleted'
 syn match tProject "^\s*.*:$"
