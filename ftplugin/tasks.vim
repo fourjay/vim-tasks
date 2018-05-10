@@ -34,9 +34,16 @@ function! s:initVariable(var, value)
 	return 0
 endfunc
 
-call s:initVariable('g:TasksMarkerBase', '☐')
-call s:initVariable('g:TasksMarkerDone', '✔')
-call s:initVariable('g:TasksMarkerCancelled', '✘')
+call s:initVariable('g:TasksMarkerIsPlaintext', '0')
+if g:TasksMarkerIsPlaintext
+	call s:initVariable('g:TasksMarkerBase', '[ ]')
+	call s:initVariable('g:TasksMarkerDone', '[X]')
+	call s:initVariable('g:TasksMarkerCancelled', '[-]')
+else
+	call s:initVariable('g:TasksMarkerBase', '☐')
+	call s:initVariable('g:TasksMarkerDone', '✔')
+	call s:initVariable('g:TasksMarkerCancelled', '✘')
+endif
 call s:initVariable('g:TasksDateFormat', '%Y-%m-%d %H:%M')
 call s:initVariable('g:TasksAttributeMarker', '@')
 call s:initVariable('g:TasksArchiveSeparator', '＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿')
