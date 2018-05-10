@@ -1,7 +1,7 @@
 " Tasks plugin
 " Language:    Tasks
 " Maintainer:  veirus
-" Last Change: 2018-02-15
+" Last Change: 2018-05-10
 " Version:     0.2
 " URL:         https://github.com/veirus/vim-tasks
 " Fork from:   https://github.com/jmolero/vim-tasks

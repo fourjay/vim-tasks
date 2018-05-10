@@ -1,10 +1,10 @@
-" Tasks syntax
+" Tasks plugin
 " Language:    Tasks
-" Maintainer:  Jorge Molero
-" Last Change: Nov 6, 2017
-" Version:     0.3
-" URL:         https://github.com/jmolero/vim-tasks
-" Fork from:   https://github.com/irrationalistic/vim-tasks
+" Maintainer:  veirus
+" Last Change: 2018-05-10
+" Version:     0.2
+" URL:         https://github.com/veirus/vim-tasks
+" Fork from:   https://github.com/jmolero/vim-tasks
 
 if version < 600
   syntax clear
