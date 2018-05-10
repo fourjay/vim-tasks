@@ -235,7 +235,7 @@ endfunc
 
 function! Separator()
 	let line = getline('.')
-	if line =~ "^-*$"
+	if line =~ "^\t*-*$"
 		return "--- ✄ -----------------------"
 	else
 		return "--"
