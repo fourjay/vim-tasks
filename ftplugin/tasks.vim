@@ -11,6 +11,8 @@ if exists("b:loaded_tasks")
 endif
 let b:loaded_tasks = 1
 
+setlocal foldmethod=indent
+
 " MAPPINGS
 nnoremap <buffer> <leader>n :call NewTask(1)<cr>
 nnoremap <buffer> <leader>N :call NewTask(-1)<cr>
